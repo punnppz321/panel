@@ -1,0 +1,37 @@
+CRITICAL - 2025-01-25 10:55:39 --> strtolower(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Validation/FormatRules.php(253): strtolower()
+#2 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/HTTP/RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip()
+#3 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Config/Services.php(570): CodeIgniter\HTTP\Request->getIPAddress()
+#4 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#5 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic()
+#6 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Config/Services.php(563): CodeIgniter\Config\BaseService::getSharedInstance()
+#7 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::session()
+#8 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Common.php(909): CodeIgniter\Config\BaseService::__callStatic()
+#9 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/app/Controllers/Auth.php(27): session()
+#10 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Auth->login()
+#11 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController()
+#12 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2025-01-25 11:14:25 --> syntax error, unexpected ','
+#0 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/home/ngpcindl/...')
+#1 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-01-25 23:12:07 --> Undefined index: HTTP_USER_AGENT
+#0 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/app/Views/Auth/login.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/ngpcindl/...', 46, Array)
+#1 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/View/View.php(214): include('/home/ngpcindl/...')
+#2 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('Auth/login', Array, true)
+#4 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/app/Controllers/Auth.php(37): view('Auth/login', Array)
+#5 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Auth->login()
+#6 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/ngpcindl/domains/nonomod.freewebhostmost.com/public_html/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
